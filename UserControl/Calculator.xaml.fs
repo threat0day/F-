@@ -141,6 +141,7 @@ type Calculator() as this  =
                                Perform.prevOper <- ""
                                txtMemo.ToolTip <- "0" )
 
+
     do btnCE.Click.Add(fun _ -> txtResult.Text <- "0"
                                 if txtHelper.Text = "" then Perform.prevResult <- 0.0
                                 Perform.blnCommand <- false)
